@@ -2,7 +2,7 @@
 QuickPy: The ultimate browser-based Python playground. Copy, paste, and execute scripts instantly while mastering the language through interactive lessons and quizzes.
 
 # Features:
-1- Copy-paste Python snippets.
+1- Copy-paste Python snippets.\n\n
 2- Run snippets in browser.
 3- Save favorite snippets.
 4- Python quiz.
