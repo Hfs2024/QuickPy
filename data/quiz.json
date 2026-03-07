@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of print(2 ** 3)?",
+      "options": ["6", "8", "9", "23"],
+      "answer": "8"
+    },
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": ["list", "tuple", "str", "int"],
+      "answer": "list"
+    },
+    {
+      "question": "What does len('Python') return?",
+      "options": ["5", "6", "7", "Error"],
+      "answer": "6"
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": ["function", "def", "fun", "define"],
+      "answer": "def"
+    },
+    {
+      "question": "What is the output of 5 // 2 in Python?",
+      "options": ["2.5", "2", "3", "0"],
+      "answer": "2"
+    },
+    {
+      "question": "Which keyword is used to handle exceptions?",
+      "options": ["try", "catch", "error", "handle"],
+      "answer": "try"
+    },
+    {
+      "question": "Which symbol is used for comments in Python?",
+      "options": ["//", "#", "/* */", "--"],
+      "answer": "#"
+    },
+    {
+      "question": "Which of these creates a list in Python?",
+      "options": ["{}", "[]", "()", "<>"],
+      "answer": "[]"
+    },
+    {
+      "question": "Which keyword is used to import a module?",
+      "options": ["include", "require", "import", "load"],
+      "answer": "import"
+    },
+    {
+      "question": "What does range(3) produce in a loop?",
+      "options": ["0,1,2", "1,2,3", "0,1,2,3", "1,2"],
+      "answer": "0,1,2"
+    }
+  ]
+}
