@@ -399,7 +399,7 @@ button:hover {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-100px)
+    transform: translateX(-100px);
   }
 
   to {
@@ -469,3 +469,4 @@ button:hover {
   }
 
 }
+
