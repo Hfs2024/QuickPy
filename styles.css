@@ -404,7 +404,7 @@ button:hover {
 
   to {
     opacity: 1;
-    translate: translateX(0)
+    transform: translateX(0)
   }
 }
 
@@ -467,4 +467,5 @@ button:hover {
   60% {
     transform: translateY(-15px);
   }
+
 }
