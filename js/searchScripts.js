@@ -33,6 +33,15 @@ class ScriptLoader {
          data-desc="${encodeURIComponent(script.description)}"
          title='Description'
          style='cursor:pointer'></i>
+      <i class='fas fa-play-circle run-btn'
+         data-code="${encodeURIComponent(script.code)}"
+         title='Run code'
+         style='cursor:pointer'></i>
+      <i class='fas fa-heart heart-btn' 
+         data-code="${encodeURIComponent(script.code)}"
+         data-title="${encodeURIComponent(script.name.charAt(0).toUpperCase() + script.name.slice(1))}"
+         title='Add to favorites'
+         style='cursor:pointer'></i>
     </div>
   </div>
 
@@ -66,6 +75,13 @@ document.addEventListener("click", function (e) {
     } else if (e.target.classList.contains("desc-btn")) {
         const desc = decodeURIComponent(e.target.getAttribute("data-desc"));
         alert(desc);
+    } else if (e.target.classList.contains("run-btn")) {
+        const code = decodeURIComponent(e.target.getAttribute("data-code"));
+        runCode(code);
+    } else if (e.target.classList.contains("heart-btn")) {
+        const code = decodeURIComponent(e.target.getAttribute("data-code"));
+        const title = decodeURIComponent(e.target.getAttribute("data-title"));
+        setAsFavorite(code, title);
     }
 });
 

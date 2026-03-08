@@ -7,6 +7,7 @@
     <title>QuickPy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.29.3/full/pyodide.js"></script>
 </head>
 
 <body>
@@ -50,14 +51,16 @@
 
     <!-- Hero Section -->
     <div class="container">
-        <h1>Ready to test your Python knowledge?</h1>
+        <h1>Run any Python code for free in the browser!</h1>
     </div>
 
-    <!-- Quiz Section -->
-    <div class="quiz fade-in-element" id="quizPage">
-        <h1 class="line-text">Take a quiz: </h1>
+    <!-- Run Section -->
+    <div class="run fade-in-element" id="quizPage">
+        <h1 class="line-text">Run Python: </h1>
 
-        <button onclick="startQuiz()" style="background-color: red; color: white;">Take Quiz <i class="fas fa-question-circle"></i> </button>
+        <textarea placeholder="Enter your code..." id="codeArea"></textarea><br /><br />
+
+        <button onclick="runCode(document.getElementById('codeArea').value)" style="background-color: red; color: white;">Run <i class="fas fa-play-circle"></i> </button>
     </div>
 
     <!-- Invitation Section -->
@@ -83,7 +86,7 @@
     <script src="js/menu.js"></script>
     <script src="js/fadeIn.js"></script>
     <script src="js/themeToggle.js"></script>
-    <script src="js/quiz.js"></script>
+    <script src="js/run.js"></script>
 
 </body>
 
