@@ -10,6 +10,21 @@
 * **Interactive Learning:** Learn Python step-by-step with guided lessons.
 * **Challenge Yourself:** Test your knowledge with built-in Python quizzes.
 
+## 🛠 Getting Started
+
+Clone the repository:
+
+* git clone https://github.com/Hf2024/QuickPy.git
+
+* Open index.html in your browser.
+
+* Start testing Python snippets immediately!
+
+## ⭐ Support & Feedback
+
+If you like QuickPy, give it a star! ⭐
+Share it with friends and classmates who want a lightweight, browser-based Python playground.
+
 ## ⚠️ Warning
 > **Note:** QuickPy is currently in **Beta**. I am working hard to improve the experience, so some features might still be under development. Stay tuned for updates! 🛠️
 
