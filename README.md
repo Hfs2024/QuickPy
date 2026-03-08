@@ -14,7 +14,7 @@
 
 Clone the repository:
 
-* Run in terminal: git clone https://github.com/Hf2024/QuickPy.git
+* Run in terminal: git clone https://github.com/Hfs2024/QuickPy.git
 
 * Open index.html in your browser.
 
