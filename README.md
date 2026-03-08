@@ -11,7 +11,7 @@
 * **Challenge Yourself:** Test your knowledge with built-in Python quizzes.
 
 ## ⚠️ Warning
-> **Note:** QuickPy is currently in **Beta**. I are working hard to improve the experience, so some features might still be under development. Stay tuned for updates! 🛠️
+> **Note:** QuickPy is currently in **Beta**. I am working hard to improve the experience, so some features might still be under development. Stay tuned for updates! 🛠️
 
 ---
 **Created by Codemaster, aged 13** 👊
