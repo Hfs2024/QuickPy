@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .CodeMirror {
+            text-align: left;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.29.3/full/pyodide.js"></script>
 </head>
 
@@ -15,7 +25,10 @@
     <header>
         <span id="menu"><i class="fas fa-bars"></i></span>
         <p>QuickPy</p>
-        <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+        <div>
+            <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+            <span id="streak"><i class="fas fa-fire"></i> 0</span>
+        </div>
     </header>
 
     <!-- Side Menu -->
@@ -45,7 +58,7 @@
             <i class="fas fa-play-circle"></i> Run Python
         </a>
         <a href="favorites.html" class="sideMenuItem">
-            <i class="fas fa-heart"></i> Favorites  
+            <i class="fas fa-heart"></i> Favorites
         </a>
     </div>
 
@@ -60,7 +73,8 @@
 
         <textarea placeholder="Enter your code..." id="codeArea"></textarea><br /><br />
 
-        <button onclick="runCode(document.getElementById('codeArea').value)" style="background-color: red; color: white;">Run <i class="fas fa-play-circle"></i> </button>
+        <button onclick="runCode(codeEditor.getValue())"
+            style="background-color: red; color: white;">Run <i class="fas fa-play-circle"></i> </button>
     </div>
 
     <!-- Invitation Section -->
@@ -87,6 +101,8 @@
     <script src="js/fadeIn.js"></script>
     <script src="js/themeToggle.js"></script>
     <script src="js/run.js"></script>
+    <script src="js/streak.js"></script>
+    <script src="js/streak.js"></script>
 
 </body>
 

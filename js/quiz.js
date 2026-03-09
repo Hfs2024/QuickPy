@@ -1,5 +1,11 @@
 const quizPage = document.getElementById("quizPage");
+const lvlSelect = document.getElementById("lvlSelect");
 let answers = null;
+let level = "easy";
+
+lvlSelect.addEventListener("change", function () {
+   level = lvlSelect.value;
+});
 
 function startQuiz() {
     fetch("./data/quiz.json")
@@ -10,7 +16,7 @@ function startQuiz() {
         .then(quizData => {
             quizPage.innerHTML = `<h1 class="line-text">Take a quiz:</h1>`;
 
-            quizData.questions.forEach((question, index) => {
+            quizData[level].forEach((question, index) => {
                 quizPage.innerHTML += `
                     <div class="quiz-question">
                         <h2>${index + 1}. ${question.question}</h2>
@@ -40,7 +46,7 @@ function checkAnswer(questionIndex) {
         return;
     }
     const answer = selectedOption.value;
-    if (answer === answers.questions[questionIndex].answer) {
+    if (answer === answers[level][questionIndex].answer) {
         alert("Correct!");
     } else {
         alert("Incorrect. Try again!");

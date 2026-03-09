@@ -14,7 +14,10 @@
     <header>
         <span id="menu"><i class="fas fa-bars"></i></span>
         <p>QuickPy</p>
-        <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+        <div>
+            <span id="toggleBtn"><i class="fas fa-adjust"></i></span>
+            <span id="streak"><i class="fas fa-fire"></i> 0</span>
+        </div>
     </header>
 
     <!-- Side Menu -->
@@ -57,6 +60,12 @@
     <div class="quiz fade-in-element" id="quizPage">
         <h1 class="line-text">Take a quiz: </h1>
 
+        <label>Choose level: </label>
+        <select id="lvlSelect">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+        </select><br /><br />
+
         <button onclick="startQuiz()" style="background-color: red; color: white;">Take Quiz <i class="fas fa-question-circle"></i> </button>
     </div>
 
@@ -84,6 +93,7 @@
     <script src="js/fadeIn.js"></script>
     <script src="js/themeToggle.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/streak.js"></script>
 
 </body>
 

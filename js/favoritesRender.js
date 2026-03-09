@@ -10,8 +10,8 @@ function renderFavorites() {
 
     favoriteSnippet.innerHTML = `
         <div class="cards-container">
-            ${codes.map((item, i) => { 
-                return `
+            ${codes.map((item, i) => {
+        return `
                 <div class="card">
                     <div class="card-header">
                         <p>${item.title || "Untitled"}</p>
@@ -22,17 +22,17 @@ function renderFavorites() {
                     </div>
                     <pre><code>${item.code}</code></pre>
                 </div>`;
-            }).join("")}
+    }).join("")}
         </div>
     `;
 }
 
-function copyCodeByIndex(i){
+function copyCodeByIndex(i) {
     copyCode(codes[i].code);
 }
 
-function removeFavoriteByIndex(i){
-    codes.splice(i,1);
+function removeFavoriteByIndex(i) {
+    codes.splice(i, 1);
     localStorage.setItem("favoritesCodes", JSON.stringify(codes));
     renderFavorites();
 }

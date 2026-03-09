@@ -1,5 +1,11 @@
 let pyodide = null;
 
+let codeEditor = CodeMirror.fromTextArea(document.getElementById("codeArea"), {
+  mode: "python",
+  theme: "dracula",
+  lineNumbers: true
+});
+
 async function initPyodide() {
   if (!pyodide) {
     console.log("Loading Pyodide...");

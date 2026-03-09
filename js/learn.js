@@ -12,6 +12,7 @@ fetch("./data/lessons.json")
     .then(lessonsData => {
         updateContainerContent(lessonsData);
         data = lessonsData;
+        setDisabled();
     })
     .catch(error => {
         console.error("Error loading lessons data:", error);
@@ -20,9 +21,10 @@ fetch("./data/lessons.json")
 
 function updateContainerContent(obj) {
     container.innerHTML = `
+                    <p style='color: gray'>Lesson ${obj.lessons[index].index} / 35</p>
                     <h2>${obj.lessons[index].name}</h2>
                     <p>${obj.lessons[index].content}</p>
-<pre>
+<pre class='codeBlock'>
 <code>${obj.lessons[index].code}</code>
 </pre>
                 `;
@@ -53,4 +55,10 @@ nextBtn.addEventListener("click", function () {
         localStorage.setItem("currentLessonIndex", index);
         setDisabled();
     }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (!data) return;
+  if (e.key === "ArrowLeft") prevBtn.click();
+  if (e.key === "ArrowRight") nextBtn.click();
 });
